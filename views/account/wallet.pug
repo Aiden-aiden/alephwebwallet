@@ -109,7 +109,7 @@ block content
                   .txaddress !{transaction.address}
                 p(align='center') 
                   | TX ID: 
-                  a.txid(href="https://chainz.cryptoid.info/dnr/tx.dws?" + transaction.txid, target='_blank') !{transaction.txid.substring(0,30)}
+                  a.txid(href="http://138.197.181.179:3001/tx/" + transaction.txid, target='_blank') !{transaction.txid.substring(0,30)}
           else
             br
             h3(align='center', style='color: #bbb;') No Transactions Available
