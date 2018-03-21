@@ -33,11 +33,9 @@ block content
     }
   .page-header
     if user
-      .wallettitle(align='center') DNR
+      .wallettitle(align='center') ALE
       .balance(align='center')
         | #{balance}
-      #swap.swapbalance(onclick='swp()', data-text-swap=btc+' BTC', align='center')
-        | $#{usd} USD
       br
       .refresh(align='center')
         a(href='/wallet')
@@ -58,16 +56,16 @@ block content
                   form.form-horizontal(action='/newaddress', method='POST')
                     input(type='hidden', name='_csrf', value=_csrf)
                     button.btn.btn-default(type='submit')
-                      | Get a new DNR Address
+                      | Get a new ALE Address
                 .col-xs-6
                   a.btn.btn-default(href='/withdraw', role='button')
                     i.fa.fa-paper-plane
-                    |  Send Denarius
+                    |  Send Aleph
         .col-xl-6
           .panel.panel-default
             .panel-heading.mbs
               .pull-left
-                | Denarius Wallet Address
+                | Aleph Wallet Address
               .pull-right
                 a#plus.minus(onclick='hide()')
                   i.fa.fa-minus
@@ -78,7 +76,7 @@ block content
                     strong #{address}
                 .col-md-6
                   .qrcode(align='center')
-                    a(href='denarius:' + address)
+                    a(href='aleph:' + address)
                       img(src='' + qrcode)
       br
       .page-header
