@@ -1,19 +1,16 @@
 
-Denarius [DNR] NodeJS Web Wallet
+Aleph [ALE] NodeJS Web Wallet
 =======================
 
-[![Dependency Status](https://david-dm.org/carsenk/denariusnodewallet/status.svg?style=flat)](https://david-dm.org/carsenk/denariusnodewallet) [![Build Status](https://travis-ci.org/carsenk/denariusnodewallet.svg?branch=master)](https://travis-ci.org/carsenk/denariusnodewallet) [![Join the chat at https://gitter.im/denariusproject/Lobby](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/denariusproject/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link) [![Thinkful Pair on Node](https://tf-assets-staging.s3.amazonaws.com/badges/thinkful_repo_badge.svg)](http://start.thinkful.com/node/)
 
-![DesktopWallet](https://user-images.githubusercontent.com/10162347/27821646-3b31105c-6060-11e7-8c82-cbbbb5b1e663.png)
-![MobileWallet](https://user-images.githubusercontent.com/10162347/27821566-f807334c-605f-11e7-8bec-805fe433237f.png)
+![DesktopWallet](http://nsa39.casimages.com/img/2018/03/21/180321073047876039.jpg)
+![MobileWallet](http://nsa39.casimages.com/img/2018/03/21/180321073047355497.jpg)
 
 **Live Demo**: Currently unavailable
 
-Denarius Node Wallet - A NodeJS/MongoDB powered denariusd Web Wallet.
+Alephmarket Node Wallet - A NodeJS/MongoDB powered alephd Web Wallet.
 
 Send and Receive Funds, Create new addresses, View Transactions, Edit your account, and more!
-
-Swap between your DNR Balance in USD and BTC prices calculated from http://coinmarketcap.com/currencies/denarius-dnr/
 
 2FA Authentication is included as well as QR Codes for addresses and 2FA!
 
@@ -23,13 +20,13 @@ Table of Contents
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
-- [Denarius Daemon Setup](#denarius-daemon-setup)
+- [Aleph Daemon Setup](#Ale-daemon-setup)
 - [License](#license)
 
 Features
 --------
 
-- Send and Receive DNR
+- Send and Receive ALE
 - Wallet Addresses, Create new ones
 - View all transactions
 - Two Factor Authentication
@@ -60,7 +57,7 @@ Features
 Prerequisites
 -------------
 
-- [denariusd](https://github.com/carsenk/denarius)
+- [alephd](https://github.com/alephmarket/ALE)
 - [MongoDB](https://www.mongodb.org/downloads)
 - [Node.js 6.0+](http://nodejs.org)
 - Command Line Tools (Optional)
@@ -77,10 +74,10 @@ The easiest way to get started is to clone the repository:
 
 ```bash
 # Get the latest snapshot
-git clone --depth=1 https://github.com/carsenk/denariusnodewallet.git denariuswallet
+git clone --depth=1 https://github.com/Aiden-aiden/alephwebwallet.git alephwallet
 
 # Change directory
-cd denariuswallet
+cd alephwallet
 
 # Install NPM dependencies
 npm install
@@ -102,14 +99,14 @@ save you a lot of time in the long run, because you won't need to manually
 restart the server each time you make a small change in code. To install, run
 `sudo npm install -g nodemon`.
 
-Denarius Daemon Setup
+Aleph Daemon Setup
 ------------------
 
-You must have a Denarius daemon running on a local server or remote server (highly recommend using SSL)
+You must have an Aleph daemon running on a local server or remote server (highly recommend using SSL)
 
 Your configuration options should be set within your .env file, you can check the .env.example for examples
 
-In your denarius.conf file (The Denariusd/QT configuration file) add the following to allow use of the web wallet.
+In your aleph.conf file (The Aleph/QT configuration file) add the following to allow use of the web wallet.
 
 ```bash
 
@@ -126,7 +123,7 @@ License
 
 The MIT License (MIT)
 
-Copyright (c) 2017 Carsen Klock
+Copyright (c) 2018 Aziz Jalel
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
